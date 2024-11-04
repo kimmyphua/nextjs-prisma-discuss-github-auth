@@ -5,6 +5,7 @@ import Link from 'next/link'
 interface PostListProps {
 	fetchData: () => Promise<PostWithData[]>
 }
+
 // TODO: Get list of posts into this component somehow
 export default async function PostList({ fetchData }: PostListProps) {
 	const posts = await fetchData()
